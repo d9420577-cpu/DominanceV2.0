@@ -23,7 +23,6 @@ client.on('messageCreate', async (message) => {
     if (msg === 'sa') return message.reply('Aleykümselam hoş geldin kanka!');
     if (msg === 'hb') return message.reply('eyvallah, nasılsın?');
     if (msg === 'başla') return message.reply('https://www.pornhub.com (kral linki buraya yazdım ama dikkatli ol!)');
-    if (msg === 'porno') return message.reply('https://www.pornhub.com (kral linki buraya yazdım ama dikkatli ol!)');
     // --- YÖNETİCİ KOMUTLARI ---
     if (!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
