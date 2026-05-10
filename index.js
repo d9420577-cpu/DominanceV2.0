@@ -19,7 +19,7 @@ client.on('messageCreate', async (message) => {
 
     // --- OTOMATİK CEVAPLAR ---
     const msg = message.content.toLowerCase();
-if (msg === 'sa') return message.reply('Aleykümselam hoş geldin kanka!');
+if (msg === 'sa') return message.reply('Aleykümselam hoş geldin kanka!'); 
 if (msg === 'hb') return message.reply('eyvallah, nasılsın?');
 if (msg === 'iyi') return message.reply('allah iyilk versin');
 if (msg === 'başla') return message.reply('https://www.pornhub.com/ (kral linki buraya yazdım ama dikkatli ol!)');
