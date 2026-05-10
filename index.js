@@ -25,6 +25,7 @@ if (msg === 'iyi') return message.reply('allah iyilk versin');
 if (msg === 'başla') return message.reply('https://www.pornhub.com/ (kral linki buraya yazdım ama dikkatli ol!)');
 if (msg === 'amt') return message.reply('seni sikerim ağzına alma o abimi');
 if (msg === 'porno') return message.reply('başla yazacaksın');
+
     // --- YÖNETİCİ KOMUTLARI ---
     if (!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
