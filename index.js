@@ -22,6 +22,7 @@ client.on('messageCreate', async (message) => {
     
     if (msg === 'sa') return message.reply('Aleykümselam hoş geldin kanka!');
     if (msg === 'hb') return message.reply('eyvallah, nasılsın?');
+    if (msg === 'iyi') return message.reply('allah iyilk versin');
     if (msg === 'başla') return message.reply('https://www.pornhub.com (kral linki buraya yazdım ama dikkatli ol!)');
     if (msg === 'amt') return message.reply('seni sikerim ağzına alma o abimi');
     if (msg === 'Başla') return message.reply('başla yazacaksın');
