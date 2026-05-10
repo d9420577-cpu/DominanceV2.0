@@ -21,7 +21,7 @@ client.on('messageCreate', async (message) => {
     const msg = message.content.toLowerCase();
     
     if (msg === 'sa') return message.reply('Aleykümselam hoş geldin kanka!');
-    if (msg === 'hg') return message.reply('Hoş bulduk, nasılsın?');
+    if (msg === 'hb') return message.reply('eyvallah, nasılsın?');
     if (msg === 'başla') return message.reply('https://www.pornhub.com (kral linki buraya yazdım ama dikkatli ol!)');
 
     // --- YÖNETİCİ KOMUTLARI ---
