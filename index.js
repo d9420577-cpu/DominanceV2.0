@@ -25,6 +25,8 @@ if (msg === 'iyi') return message.reply('allah iyilk versin');
 if (msg === 'başla') return message.reply('https://www.pornhub.com/ (kral linki buraya yazdım ama dikkatli ol!)');
 if (msg === 'amt') return message.reply('seni sikerim ağzına alma o abimi');
 if (msg === 'porno') return message.reply('başla yazacaksın');
+if (msg) ==='yt' return message.reply('https://www.youtube.com');
+if (msg) ==='rb' return message.reply('https://www.roblox.com/tr/home');
 
     // --- YÖNETİCİ KOMUTLARI ---
     if (!message.content.startsWith(prefix)) return;
@@ -38,24 +40,24 @@ if (msg === 'porno') return message.reply('başla yazacaksın');
         if (user) {
             user.kick().then(() => message.reply(`${user.user.tag} şutlandı!`)).catch(err => message.reply('Yetkim yetmiyor kanka.'));
         } else {
-            message.reply('Kimi kovuyoruz? Etiketlesene.');
+            message.reply('Kimi sikiyoruz? Etiketlesene.');
         }
     }
 
     // BAN KOMUTU (a!ban @kullanıcı)
     if (command === 'ban') {
-        if (!message.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return message.reply('Yetkin yok kanka!');
+        if (!message.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return message.reply('Yetkin yok sikerim seni ne şey yapıyon!');
         const user = message.mentions.members.first();
         if (user) {
-            user.ban().then(() => message.reply(`${user.user.tag} sonsuzluğa uğurlandı!`)).catch(err => message.reply('Yetkim yetmiyor.'));
+            user.ban().then(() => message.reply(`${user.user.tag} sonsuzluğa uğurlandı!`)).catch(err => message.reply('Yetkim yetmiyor aq.'));
         } else {
-            message.reply('Kimi banlıyoruz?');
+            message.reply('Kimi banlıyon amk yine?');
         }
     }
 
     // SİL KOMUTU (a!sil 30)
     if (command === 'sil') {
-        if (!message.member.permissions.has(PermissionsBitField.Flags.ManageMessages)) return message.reply('Mesajları silme yetkin yok!');
+        if (!message.member.permissions.has(PermissionsBitField.Flags.ManageMessages)) return message.reply('Mesajları silme yetkin yok amk delirtme!');
         let miktar = parseInt(args[0]) || 10;
         if (miktar > 100) miktar = 100;
         
@@ -71,7 +73,7 @@ if (msg === 'porno') return message.reply('başla yazacaksın');
         
         message.delete();
         const embed = {
-            title: '📊 OYLAMA BAŞLADI',
+            title: '📊 OYLAMA BAŞLADI Amk',
             description: oylamaMesaji,
             color: 0x00ff00,
             footer: { text: `${message.author.username} tarafından başlatıldı.` }
